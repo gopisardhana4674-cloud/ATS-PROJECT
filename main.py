@@ -5,7 +5,7 @@ from google import genai
 
 app = Flask(__name__)
 
-client = genai.Client(api_key="AIzaSyCFDA73DVNluUgT7ML6WiijZ5JYF7p7Hjo")
+client = genai.Client(api_key="your api key")
 
 
 def extract_text_from_pdf(pdf_path):
@@ -45,4 +45,5 @@ def chat():
 
 
 if __name__ == "__main__":
+
     app.run(debug=True, port=1000)
